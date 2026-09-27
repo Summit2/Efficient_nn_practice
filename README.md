@@ -49,4 +49,11 @@ OMM на видеокарте 16gb достичь не смог
 
 
 
+```markdown
+## Reproduce
+```bash
+pip install torch numpy matplotlib pynvml
+python main.py
+```
+
 
