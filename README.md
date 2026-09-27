@@ -26,10 +26,11 @@ OMM на видеокарте 16gb достичь не смог
 <img width="1800" height="750" alt="results_no_calibration" src="https://github.com/user-attachments/assets/1646646d-c58c-4e53-8219-a5b64a1829c6" />
 
 С калибровкой:  
-<img width="1050" height="750" alt="results_energy_calibrated" src="https://github.com/user-attachments/assets/b2255410-d79a-4a80-83f1-17fdc8ba70c1" />
+
 
 
 <img width="1050" height="750" alt="results_latency_calibrated" src="https://github.com/user-attachments/assets/49b73890-bcbf-4873-b195-b017355b0b62" />
+<img width="1050" height="750" alt="results_energy_calibrated" src="https://github.com/user-attachments/assets/b2255410-d79a-4a80-83f1-17fdc8ba70c1" />
 
 # Таблица измерений (B = 2)
 
