@@ -2,6 +2,9 @@
 
  Прогон был на kaggle, на модели nvidia tesla t4 16gb  
  Модель потребляет 70w, из спеки NVIDIA  
+<img width="270" height="189" alt="image" src="https://github.com/user-attachments/assets/c32eb002-fb1a-4faa-9f7c-be1ffc11679b" />
+<img width="270" height="230" alt="image" src="https://github.com/user-attachments/assets/89e568f2-5ec3-4ee4-86b6-1173b3076321" />
+
 
 
 
