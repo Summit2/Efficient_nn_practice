@@ -1,0 +1,225 @@
+ Container bert-classic-baseline Creating 
+ Container bert-classic-baseline Created 
+mesg: ttyname failed: Inappropriate ioctl for device
+dynamic is: True
+bmm is: False
+fp16 is: True
+output at ./resultTime/bert-base-uncased/classic/cola/seed=27/dynamic=True/bmm=False/fp16
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+10/10/2026 12:09:05 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+Mixed precision type: no
+
+10/10/2026 12:09:07 - WARNING - datasets.builder - Using custom data configuration default-85d2d5820e8c0b91
+10/10/2026 12:09:07 - WARNING - datasets.builder - Found cached dataset parquet (/workspace/.cache/huggingface/datasets/parquet/default-85d2d5820e8c0b91/0.0.0/2a3b91fbd88a2c90d1dbbb32b460cf621d31bd5b05b934492fdef7d8d6f236ec)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 1833.71it/s]
+num_labels is: 2
+loading configuration file config.json from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+You are using a model of type bert to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+loading configuration file config.json from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+loading file vocab.txt from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/vocab.txt
+loading file tokenizer.json from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/tokenizer.json
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/tokenizer_config.json
+loading configuration file config.json from cache at /workspace/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+**************************************************************************************************** ['classic'] ****************************************************************************************************
+{'embedding': set(), 'attention': set(), 'addNorm_sy': set(), 'addNorm_nsy': set(), 'feedForward': set(), 'pooler': set(), 'classifier': set()}
+Version: {'net': <class 'transformersLocal.models.bert.modeling_bert.BertForSequenceClassification'>}
+Config: {'linear': <class 'torch.nn.modules.linear.Linear'>, 'identity': <class 'torch.nn.modules.linear.Identity'>}
+Quantize: ['classic']
+Config: PretrainedConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.22.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+{'embedding': set(), 'attention': set(), 'addNorm_sy': set(), 'addNorm_nsy': set(), 'feedForward': set(), 'pooler': set(), 'classifier': set()}
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+model.num_label is: 2
+Running tokenizer on dataset:   0%|          | 0/9 [00:00<?, ?ba/s]Running tokenizer on dataset: 100%|██████████| 9/9 [00:00<00:00, 85.61ba/s]Running tokenizer on dataset: 100%|██████████| 9/9 [00:00<00:00, 85.48ba/s]
+Running tokenizer on dataset:   0%|          | 0/2 [00:00<?, ?ba/s]Running tokenizer on dataset: 100%|██████████| 2/2 [00:00<00:00, 212.29ba/s]
+Running tokenizer on dataset:   0%|          | 0/2 [00:00<?, ?ba/s]Running tokenizer on dataset: 100%|██████████| 2/2 [00:00<00:00, 215.67ba/s]
+10/10/2026 12:09:10 - INFO - __main__ - Sample 7862 of the training set: {'input_ids': [101, 1996, 15212, 2003, 2108, 8828, 2011, 2008, 10608, 1012, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1}.
+10/10/2026 12:09:10 - INFO - __main__ - Sample 4541 of the training set: {'input_ids': [101, 2984, 6369, 1037, 2299, 1010, 2021, 3389, 2071, 2196, 1012, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0}.
+10/10/2026 12:09:10 - INFO - __main__ - Sample 4685 of the training set: {'input_ids': [101, 2115, 2808, 2020, 2908, 2087, 12246, 2058, 1012, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 0}.
+10/10/2026 12:09:12 - INFO - __main__ - ***** Running training *****
+10/10/2026 12:09:12 - INFO - __main__ -   Num examples = 8551
+10/10/2026 12:09:12 - INFO - __main__ -   Num Epochs = 3
+10/10/2026 12:09:12 - INFO - __main__ -   Instantaneous batch size per device = 32
+10/10/2026 12:09:12 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 32
+10/10/2026 12:09:12 - INFO - __main__ -   Gradient Accumulation steps = 1
+10/10/2026 12:09:12 - INFO - __main__ -   Total optimization steps = 804
+task_name cola
+train_file None
+validation_file None
+max_length 128
+pad_to_max_length False
+model_name_or_path bert-base-uncased
+use_slow_tokenizer False
+per_device_train_batch_size 32
+per_device_eval_batch_size 8
+learning_rate 2e-05
+weight_decay 0.0
+num_train_epochs 3
+max_train_steps 804
+gradient_accumulation_steps 1
+lr_scheduler_type SchedulerType.LINEAR
+num_warmup_steps 0
+output_dir ./resultTime/bert-base-uncased/classic/cola/seed=27/dynamic=True/bmm=False/fp16
+seed 27
+push_to_hub False
+hub_model_id None
+hub_token None
+checkpointing_steps None
+resume_from_checkpoint None
+with_tracking False
+report_to all
+ignore_mismatched_sizes False
+arch BertForSequenceClassification
+model_config classic
+choice ['classic']
+clip_lr 2e-05
+clip_wd 0.0
+qa True
+qw True
+qg True
+biased False
+abits 0
+wbits 0
+biasbits 16
+bbits 0
+bwbits 0
+hadamard False
+dynamic True
+bmm False
+biprecision True
+twolayers_gradweight False
+twolayers_gradinputt False
+luq False
+weight_quant_method lsq
+input_quant_method lsq
+learnable_step_size True
+learnable_hadamard False
+lsq_layerwise_input layer
+lsq_layerwise_weight layer
+retain_large_value False
+quantize_large_value False
+draw_value False
+clip_value 100.0
+track_step_size False
+fp16 True
+  0%|          | 0/804 [00:00<?, ?it/s]initialize LSQ and Hadamard finish
+  0%|          | 1/804 [00:00<06:55,  1.93it/s]  1%|          | 5/804 [00:00<01:22,  9.70it/s]  1%|          | 9/804 [00:00<00:48, 16.31it/s]  2%|▏         | 13/804 [00:00<00:37, 21.27it/s]  2%|▏         | 17/804 [00:00<00:31, 24.77it/s]  3%|▎         | 21/804 [00:01<00:28, 27.43it/s]  3%|▎         | 25/804 [00:01<00:26, 29.29it/s]  4%|▎         | 29/804 [00:01<00:25, 30.52it/s]  4%|▍         | 33/804 [00:01<00:26, 29.43it/s]  5%|▍         | 37/804 [00:01<00:25, 29.71it/s]  5%|▌         | 41/804 [00:01<00:27, 28.25it/s]  5%|▌         | 44/804 [00:01<00:26, 28.53it/s]  6%|▌         | 47/804 [00:01<00:27, 27.68it/s]  6%|▌         | 50/804 [00:02<00:27, 27.74it/s]  7%|▋         | 53/804 [00:02<00:27, 27.66it/s]  7%|▋         | 57/804 [00:02<00:26, 28.21it/s]  7%|▋         | 60/804 [00:02<00:25, 28.67it/s]  8%|▊         | 64/804 [00:02<00:25, 29.08it/s]  8%|▊         | 68/804 [00:02<00:24, 29.81it/s]  9%|▉         | 71/804 [00:02<00:24, 29.43it/s]  9%|▉         | 74/804 [00:02<00:24, 29.50it/s] 10%|▉         | 77/804 [00:03<00:24, 29.50it/s] 10%|█         | 81/804 [00:03<00:23, 30.15it/s] 11%|█         | 85/804 [00:03<00:23, 29.98it/s] 11%|█         | 88/804 [00:03<00:24, 29.19it/s] 11%|█▏        | 91/804 [00:03<00:25, 27.54it/s] 12%|█▏        | 94/804 [00:03<00:26, 27.07it/s] 12%|█▏        | 97/804 [00:03<00:27, 25.65it/s] 13%|█▎        | 101/804 [00:03<00:25, 27.05it/s] 13%|█▎        | 105/804 [00:04<00:24, 28.29it/s] 13%|█▎        | 108/804 [00:04<00:24, 28.46it/s] 14%|█▍        | 111/804 [00:04<00:24, 28.73it/s] 14%|█▍        | 114/804 [00:04<00:23, 29.07it/s] 15%|█▍        | 118/804 [00:04<00:23, 29.35it/s] 15%|█▌        | 121/804 [00:04<00:24, 28.37it/s] 15%|█▌        | 124/804 [00:04<00:24, 27.59it/s] 16%|█▌        | 127/804 [00:04<00:24, 27.65it/s] 16%|█▋        | 131/804 [00:04<00:23, 28.55it/s] 17%|█▋        | 134/804 [00:05<00:23, 28.73it/s] 17%|█▋        | 138/804 [00:05<00:22, 29.20it/s] 18%|█▊        | 142/804 [00:05<00:22, 29.75it/s] 18%|█▊        | 145/804 [00:05<00:22, 29.60it/s] 18%|█▊        | 148/804 [00:05<00:22, 29.57it/s] 19%|█▉        | 151/804 [00:05<00:22, 29.68it/s] 19%|█▉        | 155/804 [00:05<00:21, 30.09it/s] 20%|█▉        | 159/804 [00:05<00:22, 28.62it/s] 20%|██        | 163/804 [00:06<00:21, 29.29it/s] 21%|██        | 166/804 [00:06<00:21, 29.42it/s] 21%|██        | 170/804 [00:06<00:21, 29.48it/s] 22%|██▏       | 174/804 [00:06<00:21, 29.89it/s] 22%|██▏       | 178/804 [00:06<00:20, 30.07it/s] 23%|██▎       | 182/804 [00:06<00:20, 29.88it/s] 23%|██▎       | 186/804 [00:06<00:20, 30.24it/s] 24%|██▎       | 190/804 [00:06<00:20, 30.00it/s] 24%|██▍       | 194/804 [00:07<00:20, 29.92it/s] 25%|██▍       | 197/804 [00:07<00:20, 29.53it/s] 25%|██▍       | 200/804 [00:07<00:20, 29.36it/s] 25%|██▌       | 204/804 [00:07<00:20, 29.92it/s] 26%|██▌       | 207/804 [00:07<00:20, 29.68it/s] 26%|██▌       | 210/804 [00:07<00:20, 29.54it/s] 27%|██▋       | 214/804 [00:07<00:19, 29.60it/s] 27%|██▋       | 218/804 [00:07<00:19, 30.68it/s] 28%|██▊       | 222/804 [00:07<00:19, 29.22it/s] 28%|██▊       | 225/804 [00:08<00:19, 29.24it/s] 28%|██▊       | 228/804 [00:08<00:19, 29.35it/s] 29%|██▉       | 232/804 [00:08<00:18, 30.70it/s] 29%|██▉       | 236/804 [00:08<00:17, 31.62it/s] 30%|██▉       | 240/804 [00:08<00:17, 31.97it/s] 30%|███       | 244/804 [00:08<00:17, 32.50it/s] 31%|███       | 248/804 [00:08<00:16, 33.08it/s] 31%|███▏      | 252/804 [00:08<00:16, 33.08it/s] 32%|███▏      | 256/804 [00:09<00:16, 33.16it/s] 32%|███▏      | 260/804 [00:09<00:16, 33.40it/s] 33%|███▎      | 264/804 [00:09<00:16, 33.52it/s] 33%|███▎      | 268/804 [00:09<00:15, 34.17it/s]10/10/2026 12:09:21 - INFO - __main__ - epoch 0: {'matthews_correlation': 0.5559464455278303} Time 2026/10/10 12:09:21:
+ 34%|███▍      | 272/804 [00:10<00:41, 12.86it/s] 34%|███▍      | 276/804 [00:10<00:33, 15.85it/s] 35%|███▍      | 280/804 [00:10<00:27, 18.78it/s] 35%|███▌      | 284/804 [00:10<00:23, 21.67it/s] 36%|███▌      | 288/804 [00:10<00:21, 24.35it/s] 36%|███▋      | 292/804 [00:10<00:19, 26.59it/s] 37%|███▋      | 296/804 [00:10<00:17, 28.39it/s] 37%|███▋      | 300/804 [00:10<00:17, 29.60it/s] 38%|███▊      | 304/804 [00:11<00:16, 30.54it/s] 38%|███▊      | 308/804 [00:11<00:15, 31.26it/s] 39%|███▉      | 312/804 [00:11<00:15, 31.92it/s] 39%|███▉      | 316/804 [00:11<00:15, 32.47it/s] 40%|███▉      | 320/804 [00:11<00:14, 32.76it/s] 40%|████      | 324/804 [00:11<00:14, 33.12it/s] 41%|████      | 328/804 [00:11<00:14, 33.41it/s] 41%|████▏     | 332/804 [00:11<00:14, 33.24it/s] 42%|████▏     | 336/804 [00:12<00:13, 33.55it/s] 42%|████▏     | 340/804 [00:12<00:13, 33.70it/s] 43%|████▎     | 344/804 [00:12<00:13, 33.98it/s] 43%|████▎     | 348/804 [00:12<00:13, 33.49it/s] 44%|████▍     | 352/804 [00:12<00:13, 32.99it/s] 44%|████▍     | 356/804 [00:12<00:13, 33.14it/s] 45%|████▍     | 360/804 [00:12<00:13, 32.24it/s] 45%|████▌     | 364/804 [00:12<00:13, 32.67it/s] 46%|████▌     | 368/804 [00:13<00:13, 32.93it/s] 46%|████▋     | 372/804 [00:13<00:13, 32.98it/s] 47%|████▋     | 376/804 [00:13<00:12, 33.24it/s] 47%|████▋     | 380/804 [00:13<00:12, 33.50it/s] 48%|████▊     | 384/804 [00:13<00:12, 33.37it/s] 48%|████▊     | 388/804 [00:13<00:12, 33.51it/s] 49%|████▉     | 392/804 [00:13<00:12, 33.00it/s] 49%|████▉     | 396/804 [00:13<00:12, 33.53it/s] 50%|████▉     | 400/804 [00:13<00:12, 33.61it/s] 50%|█████     | 404/804 [00:14<00:11, 33.87it/s] 51%|█████     | 408/804 [00:14<00:11, 33.39it/s] 51%|█████     | 412/804 [00:14<00:11, 33.19it/s] 52%|█████▏    | 416/804 [00:14<00:11, 33.19it/s] 52%|█████▏    | 420/804 [00:14<00:11, 33.61it/s] 53%|█████▎    | 424/804 [00:14<00:11, 33.54it/s] 53%|█████▎    | 428/804 [00:14<00:11, 33.62it/s] 54%|█████▎    | 432/804 [00:14<00:10, 34.06it/s] 54%|█████▍    | 436/804 [00:15<00:10, 34.05it/s] 55%|█████▍    | 440/804 [00:15<00:10, 33.95it/s] 55%|█████▌    | 444/804 [00:15<00:10, 33.80it/s] 56%|█████▌    | 448/804 [00:15<00:10, 33.59it/s] 56%|█████▌    | 452/804 [00:15<00:10, 33.43it/s] 57%|█████▋    | 456/804 [00:15<00:10, 33.30it/s] 57%|█████▋    | 460/804 [00:15<00:10, 33.46it/s] 58%|█████▊    | 464/804 [00:15<00:10, 33.24it/s] 58%|█████▊    | 468/804 [00:16<00:10, 33.27it/s] 59%|█████▊    | 472/804 [00:16<00:09, 33.62it/s] 59%|█████▉    | 476/804 [00:16<00:09, 33.80it/s] 60%|█████▉    | 480/804 [00:16<00:09, 33.98it/s] 60%|██████    | 484/804 [00:16<00:09, 33.82it/s] 61%|██████    | 488/804 [00:16<00:09, 34.07it/s] 61%|██████    | 492/804 [00:16<00:09, 34.02it/s] 62%|██████▏   | 496/804 [00:16<00:09, 33.56it/s] 62%|██████▏   | 500/804 [00:16<00:09, 33.76it/s] 63%|██████▎   | 504/804 [00:17<00:08, 33.59it/s] 63%|██████▎   | 508/804 [00:17<00:08, 33.72it/s] 64%|██████▎   | 512/804 [00:17<00:08, 33.82it/s] 64%|██████▍   | 516/804 [00:17<00:08, 33.73it/s] 65%|██████▍   | 520/804 [00:17<00:08, 33.66it/s] 65%|██████▌   | 524/804 [00:17<00:08, 34.12it/s] 66%|██████▌   | 528/804 [00:17<00:08, 34.21it/s] 66%|██████▌   | 532/804 [00:17<00:08, 34.00it/s] 67%|██████▋   | 536/804 [00:18<00:07, 34.09it/s]10/10/2026 12:09:30 - INFO - __main__ - epoch 1: {'matthews_correlation': 0.5469451017688902} Time 2026/10/10 12:09:30:
+ 67%|██████▋   | 540/804 [00:18<00:20, 12.90it/s] 68%|██████▊   | 544/804 [00:18<00:16, 15.82it/s] 68%|██████▊   | 548/804 [00:19<00:13, 18.82it/s] 69%|██████▊   | 552/804 [00:19<00:11, 21.60it/s] 69%|██████▉   | 556/804 [00:19<00:10, 24.22it/s] 70%|██████▉   | 560/804 [00:19<00:09, 26.38it/s] 70%|███████   | 564/804 [00:19<00:08, 28.33it/s] 71%|███████   | 568/804 [00:19<00:08, 29.46it/s] 71%|███████   | 572/804 [00:19<00:07, 30.72it/s] 72%|███████▏  | 576/804 [00:19<00:07, 31.47it/s] 72%|███████▏  | 580/804 [00:19<00:07, 31.74it/s] 73%|███████▎  | 584/804 [00:20<00:06, 32.29it/s] 73%|███████▎  | 588/804 [00:20<00:06, 32.42it/s] 74%|███████▎  | 592/804 [00:20<00:06, 32.67it/s] 74%|███████▍  | 596/804 [00:20<00:06, 32.43it/s] 75%|███████▍  | 600/804 [00:20<00:06, 32.84it/s] 75%|███████▌  | 604/804 [00:20<00:06, 33.00it/s] 76%|███████▌  | 608/804 [00:20<00:05, 33.34it/s] 76%|███████▌  | 612/804 [00:20<00:05, 33.66it/s] 77%|███████▋  | 616/804 [00:21<00:05, 33.14it/s] 77%|███████▋  | 620/804 [00:21<00:05, 33.31it/s] 78%|███████▊  | 624/804 [00:21<00:05, 32.37it/s] 78%|███████▊  | 628/804 [00:21<00:05, 30.71it/s] 79%|███████▊  | 632/804 [00:21<00:05, 29.85it/s] 79%|███████▉  | 636/804 [00:21<00:05, 30.19it/s] 80%|███████▉  | 640/804 [00:21<00:05, 29.37it/s] 80%|███████▉  | 643/804 [00:21<00:05, 29.30it/s] 80%|████████  | 646/804 [00:22<00:05, 28.25it/s] 81%|████████  | 650/804 [00:22<00:05, 29.44it/s] 81%|████████  | 653/804 [00:22<00:05, 29.19it/s] 82%|████████▏ | 656/804 [00:22<00:05, 28.83it/s] 82%|████████▏ | 659/804 [00:22<00:05, 29.00it/s] 82%|████████▏ | 663/804 [00:22<00:04, 28.20it/s] 83%|████████▎ | 666/804 [00:22<00:04, 28.35it/s] 83%|████████▎ | 669/804 [00:22<00:04, 28.16it/s] 84%|████████▎ | 673/804 [00:23<00:04, 29.15it/s] 84%|████████▍ | 676/804 [00:23<00:04, 29.23it/s] 84%|████████▍ | 679/804 [00:23<00:04, 29.44it/s] 85%|████████▍ | 682/804 [00:23<00:04, 28.79it/s] 85%|████████▌ | 686/804 [00:23<00:03, 29.71it/s] 86%|████████▌ | 689/804 [00:23<00:03, 29.32it/s] 86%|████████▌ | 693/804 [00:23<00:03, 29.88it/s] 87%|████████▋ | 696/804 [00:23<00:03, 28.53it/s] 87%|████████▋ | 700/804 [00:23<00:03, 28.92it/s] 87%|████████▋ | 703/804 [00:24<00:03, 29.11it/s] 88%|████████▊ | 707/804 [00:24<00:03, 29.60it/s] 88%|████████▊ | 711/804 [00:24<00:03, 30.37it/s] 89%|████████▉ | 715/804 [00:24<00:03, 28.99it/s] 89%|████████▉ | 718/804 [00:24<00:02, 29.11it/s] 90%|████████▉ | 721/804 [00:24<00:02, 28.71it/s] 90%|█████████ | 725/804 [00:24<00:02, 29.55it/s] 91%|█████████ | 728/804 [00:24<00:02, 28.15it/s] 91%|█████████ | 731/804 [00:25<00:02, 27.89it/s] 91%|█████████▏| 734/804 [00:25<00:02, 27.43it/s] 92%|█████████▏| 737/804 [00:25<00:02, 27.62it/s] 92%|█████████▏| 741/804 [00:25<00:02, 28.40it/s] 93%|█████████▎| 744/804 [00:25<00:02, 28.70it/s] 93%|█████████▎| 748/804 [00:25<00:01, 29.85it/s] 93%|█████████▎| 751/804 [00:25<00:01, 28.40it/s] 94%|█████████▍| 754/804 [00:25<00:01, 28.23it/s] 94%|█████████▍| 757/804 [00:25<00:01, 28.51it/s] 95%|█████████▍| 761/804 [00:26<00:01, 28.87it/s] 95%|█████████▌| 765/804 [00:26<00:01, 29.17it/s] 96%|█████████▌| 768/804 [00:26<00:01, 27.82it/s] 96%|█████████▌| 771/804 [00:26<00:01, 27.90it/s] 96%|█████████▋| 774/804 [00:26<00:01, 27.39it/s] 97%|█████████▋| 778/804 [00:26<00:00, 28.48it/s] 97%|█████████▋| 781/804 [00:26<00:00, 28.62it/s] 98%|█████████▊| 785/804 [00:26<00:00, 29.66it/s] 98%|█████████▊| 788/804 [00:26<00:00, 29.12it/s] 99%|█████████▊| 792/804 [00:27<00:00, 29.09it/s] 99%|█████████▉| 795/804 [00:27<00:00, 29.27it/s] 99%|█████████▉| 799/804 [00:27<00:00, 29.13it/s]100%|█████████▉| 802/804 [00:27<00:00, 28.66it/s]10/10/2026 12:09:40 - INFO - __main__ - epoch 2: {'matthews_correlation': 0.5955860617587142} Time 2026/10/10 12:09:40:
+100%|██████████| 804/804 [00:28<00:00, 28.44it/s]

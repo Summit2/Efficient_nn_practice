@@ -1,0 +1,64 @@
+Time 2026/10/09 20:48:51:
+task_name cola
+train_file None
+validation_file None
+max_length 128
+pad_to_max_length False
+model_name_or_path bert-base-uncased
+use_slow_tokenizer False
+per_device_train_batch_size 32
+per_device_eval_batch_size 8
+learning_rate 2e-05
+weight_decay 0.0
+num_train_epochs 3
+max_train_steps 804
+gradient_accumulation_steps 1
+lr_scheduler_type SchedulerType.LINEAR
+num_warmup_steps 0
+output_dir ./resultTime/bert-base-uncased/quantize/cola/seed=27/dynamic=True/bmm=False/fp16
+seed 27
+push_to_hub False
+hub_model_id None
+hub_token None
+checkpointing_steps None
+resume_from_checkpoint None
+with_tracking False
+report_to all
+ignore_mismatched_sizes False
+arch BertForSequenceClassification
+model_config quantize
+choice ['quantize']
+clip_lr 2e-05
+clip_wd 0.0
+qa True
+qw True
+qg True
+biased False
+abits 4
+wbits 4
+biasbits 16
+bbits 4
+bwbits 4
+hadamard True
+dynamic True
+bmm False
+biprecision True
+twolayers_gradweight True
+twolayers_gradinputt True
+luq False
+weight_quant_method lsq
+input_quant_method lsq
+learnable_step_size True
+learnable_hadamard False
+lsq_layerwise_input layer
+lsq_layerwise_weight layer
+retain_large_value False
+quantize_large_value False
+draw_value False
+clip_value 100.0
+track_step_size False
+fp16 True
+epoch 0: {'matthews_correlation': 0.5003778043550716}
+epoch 1: {'matthews_correlation': 0.45539810748029474}
+epoch 2: {'matthews_correlation': 0.510581671760424}
+training time 65.804

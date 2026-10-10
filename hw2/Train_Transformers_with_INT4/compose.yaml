@@ -1,0 +1,15 @@
+services:
+  bert-int4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: train-transformers-int4:cuda113
+    container_name: bert-int4-training
+    init: true
+    gpus: all
+    shm_size: 8gb
+    working_dir: /workspace/SingleDivide
+    volumes:
+      - ./outputs:/workspace/SingleDivide/resultTime
+      - ./hf-cache:/workspace/.cache/huggingface
+    command: ["bash", "-lc", "ln -sfn transformersLocal transformers && sed -i 's/\\r$//' task.sh && exec bash task.sh"]
